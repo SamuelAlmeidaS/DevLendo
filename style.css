@@ -1,3 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    background: #a179ff73;
+    
+}
+.header {
+    align-items: center;
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Shizuru', cursive;
+}
+
+ul {
+
+    display: inline-flex;
+}
+ul li {
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: none;
+    list-style: none;
+    margin-right: 10px;
+    cursor: pointer;
+    background: #a589e6;
+}
+ul li:hover {
+    background: #966afd;
+}
 #produtos{
     max-width: 900px;
     margin: 0 auto;
@@ -11,6 +54,36 @@
     
 }
 .produto-single {
-    width: 33.33%;
-    padding: 0 20px;
+    padding: 8px;
+    text-align: center;
+    width: 50%;
+    border: 1px solid #c5adff;
+    margin: 0 10px;
+}
+.produto-single img {
+    margin-top: 10px;
+    max-width: 70%;
+}
+.produto-single p {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.produto-single a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: #6833e4;
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+.produto-single a:hover{
+    background: #6833e486;
+}
+
+h2 {
+    padding: 10px 0;
+    text-align: center;
 }
