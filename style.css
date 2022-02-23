@@ -1,0 +1,16 @@
+#produtos{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+}
+#carrinho{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2%;
+    
+}
+.produto-single {
+    width: 33.33%;
+    padding: 0 20px;
+}

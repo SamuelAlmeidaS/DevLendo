@@ -7,13 +7,13 @@ const items = [
     },
     {
         id: 1,
-        nome: 'JavaScript and JQuery',
+        nome: 'and',
         img: '/img/jsAndJquery.jpg',
         quantidade: 0
     },
     {
         id: 2,
-        nome: 'JavaScript and JQuery',
+        nome: 'JavaScript',
         img: '/img/jsAndJquery.jpg',
         quantidade: 0
     }
@@ -35,9 +35,18 @@ inicializarLoja = () => {
 inicializarLoja()
 
 atualizarCarrinho = () => {
- console.log(items)
-
+    var containerCarrinho = document.getElementById('carrinho')
+    containerCarrinho.innerHTML = ""
+    items.map((val)=>{
+        if(val.quantidade > 0){
+        containerCarrinho.innerHTML += `
+       <p>`+val.nome+  ` | Quantidade: `+val.quantidade+`</p>
+       <hr/>
+      
+     `}
+     })
 }
+
 
 var links = document.getElementsByTagName('a')
 
